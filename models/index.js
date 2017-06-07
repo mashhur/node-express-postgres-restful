@@ -5,7 +5,8 @@ var path      = require("path");
 var Sequelize = require("sequelize");
 var env       = process.env.NODE_ENV || "development";
 //var config    = require(__dirname + '/../config/config.json')[env];
-var sequelize = new Sequelize("postgres", "nik", null, {
+var sequelize = new Sequelize("d8mofmtedli62b", "zznphzzqvvyjhv", '97726edf5cc28c51be94c0955a31c78d9d3f64b76534165d6b89929f3fe59d1b', {
+  host: 'ec2-107-20-226-93.compute-1.amazonaws.com:5432',
   dialect: 'postgres',
   native: true
 });
