@@ -14,7 +14,7 @@ var db        = {};
 
 // Change to true to update the model in the database.
 // NOTE: This will erase your data.
-sequelize.sync({force: false});
+sequelize.sync({force: true});
 
 fs
   .readdirSync(__dirname)
